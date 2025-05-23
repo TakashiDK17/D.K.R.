@@ -1,0 +1,303 @@
+local DKRFastandSegurity = Instance.new("ScreenGui")
+local BreackingPoint2 = Instance.new("ImageLabel")
+local HitBoxExpander = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Title1 = Instance.new("TextLabel")
+local Title2 = Instance.new("TextLabel")
+local RobloxIcon = Instance.new("ImageLabel")
+
+--Propiedades:
+
+DKRFastandSegurity.Name = "DKR Fast and Segurity"
+DKRFastandSegurity.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DKRFastandSegurity.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BreackingPoint2.Name = "Breacking Point 2"
+BreackingPoint2.Parent = DKRFastandSegurity
+BreackingPoint2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BreackingPoint2.BackgroundTransparency = 1.000
+BreackingPoint2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BreackingPoint2.BorderSizePixel = 0
+BreackingPoint2.Position = UDim2.new(0.0196000226, 0, 0.609847128, 0)
+BreackingPoint2.Size = UDim2.new(0.189167976, 0, 0.359033376, 0)
+BreackingPoint2.Image = "rbxassetid://949752421"
+
+HitBoxExpander.Name = "HitBox Expander"
+HitBoxExpander.Parent = BreackingPoint2
+HitBoxExpander.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HitBoxExpander.BackgroundTransparency = 1.000
+HitBoxExpander.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitBoxExpander.BorderSizePixel = 0
+HitBoxExpander.Position = UDim2.new(0, 0, 0.602564096, 0)
+HitBoxExpander.Size = UDim2.new(0.522821605, 0, 0.147435904, 0)
+HitBoxExpander.Font = Enum.Font.SourceSansBold
+HitBoxExpander.Text = "HitBox Expander"
+HitBoxExpander.TextColor3 = Color3.fromRGB(255, 255, 255)
+HitBoxExpander.TextSize = 14.000
+HitBoxExpander.TextStrokeTransparency = 0.500
+HitBoxExpander.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = BreackingPoint2
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BackgroundTransparency = 1.000
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.078838177, 0, 0.75, 0)
+Noclip.Size = UDim2.new(0.365145236, 0, 0.057692308, 0)
+Noclip.Font = Enum.Font.SourceSansBold
+Noclip.Text = "More Options"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 14.000
+Noclip.TextStrokeTransparency = 0.500
+Noclip.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = BreackingPoint2
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.767634869, 0, 0, 0)
+Close.Size = UDim2.new(0.232365146, 0, 0.160256416, 0)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextStrokeTransparency = 0.500
+Close.TextWrapped = true
+
+Title1.Name = "Title 1"
+Title1.Parent = BreackingPoint2
+Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title1.BackgroundTransparency = 1.000
+Title1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title1.BorderSizePixel = 0
+Title1.Position = UDim2.new(0, 0, 0.022435898, 0)
+Title1.Size = UDim2.new(0.829875529, 0, 0.115384616, 0)
+Title1.Font = Enum.Font.SourceSans
+Title1.Text = "Breacking "
+Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title1.TextScaled = true
+Title1.TextSize = 14.000
+Title1.TextStrokeTransparency = 0.500
+Title1.TextWrapped = true
+
+Title2.Name = "Title 2"
+Title2.Parent = BreackingPoint2
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title2.BorderSizePixel = 0
+Title2.Position = UDim2.new(0.0331950225, 0, 0.137820512, 0)
+Title2.Size = UDim2.new(0.829875529, 0, 0.115384616, 0)
+Title2.Font = Enum.Font.SourceSans
+Title2.Text = "Point 2"
+Title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title2.TextScaled = true
+Title2.TextSize = 14.000
+Title2.TextStrokeTransparency = 0.500
+Title2.TextWrapped = true
+
+RobloxIcon.Name = "Roblox Icon"
+RobloxIcon.Parent = BreackingPoint2
+RobloxIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RobloxIcon.BackgroundTransparency = 1.000
+RobloxIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RobloxIcon.BorderSizePixel = 0
+RobloxIcon.Position = UDim2.new(0.663900435, 0, 0.137820512, 0)
+RobloxIcon.Size = UDim2.new(0.248962656, 0, 0.192307696, 0)
+RobloxIcon.Image = "rbxassetid://12348119032"
+RobloxIcon.ImageColor3 = Color3.fromRGB(255, 0, 0)
+
+-- Scripts:
+
+local function SCMFCN_fake_script() -- HitBoxExpander.LocalScript 
+	local script = Instance.new('LocalScript', HitBoxExpander)
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "D.K.R // Breacking Point", Text = "Presiona w para habilitar el script"})
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	
+	print("D.K.R Es propiedad de D.K. Takashi, encuentra este script y mas en B-12 Community o en D.K. Takashi en Youtube")
+	-- Configuraciones.
+	
+	bind = ""
+	bind2 = "w"
+	bind3 = "p"
+	
+	-- Script
+	
+	mouse.KeyDown:connect(function(key)
+	if key == bind then
+	player.Character.HumanoidRootPart.CFrame = CFrame.new(1254.09656, 137.906067, -172.128204)
+	end
+	end)
+	
+	mouse.KeyDown:connect(function(key2)
+	if key2 == bind2 then
+	_G.HeadSize = 20
+	_G.Disabled = true
+	
+	
+	if _G.Disabled then
+	for i,v in next, game:GetService('Players'):GetPlayers() do
+	if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+	pcall(function()
+	v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+	v.Character.HumanoidRootPart.Transparency = 1
+	v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright red")
+	v.Character.HumanoidRootPart.Material = "Neon"
+	v.Character.HumanoidRootPart.CanCollide = false
+	end)
+	end
+	end
+	end
+	end
+	end)
+	
+	mouse.KeyDown:connect(function(key3)
+	if key3 == bind3 then
+	_G.HeadSize = 20
+	_G.Disabled = true
+	
+	
+	for i,v in next, game:GetService('Players'):GetPlayers() do
+	if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+	pcall(function()
+	v.Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
+	v.Character.HumanoidRootPart.Transparency = 1
+	v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Medium stone grey")
+	v.Character.HumanoidRootPart.Material = "Plastic"
+	v.Character.HumanoidRootPart.CanCollide = false
+	end)
+	end
+	end
+	end
+	end)
+end
+coroutine.wrap(SCMFCN_fake_script)()
+local function UOLMD_fake_script() -- Noclip.Noclip 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local button = script.Parent 
+	local Noclip = nil  
+	local Clip = true 
+	local originalCollisions = {}
+	
+	function saveOriginalCollisions()  
+		local character = game.Players.LocalPlayer.Character  
+		if character then  
+			for _, part in pairs(character:GetDescendants()) do  
+				if part:IsA('BasePart') then  
+					
+					originalCollisions[part] = part.CanCollide  
+				end  
+			end  
+		end  
+	end  
+	
+	function noclip()  
+		Clip = false  
+		saveOriginalCollisions() 
+		local function Nocl()  
+			local character = game.Players.LocalPlayer.Character  
+			if not Clip and character then  
+				for _, v in pairs(character:GetDescendants()) do  
+					if v:IsA('BasePart') and v.CanCollide and v.Name ~= "floatName" then  
+						v.CanCollide = false  
+					end  
+				end  
+			end  
+			wait(0.21)
+		end  
+		Noclip = game:GetService('RunService').Stepped:Connect(Nocl)  
+	
+		
+		button.Text = "No-Clip"  
+	end  
+	
+	function clip()  
+		if Noclip then Noclip:Disconnect() end  
+		Clip = true  
+	
+		
+		local character = game.Players.LocalPlayer.Character  
+		if character then  
+			for part, originalState in pairs(originalCollisions) do  
+				if part:IsA('BasePart') then  
+					part.CanCollide = originalState
+				end  
+			end  
+		end  
+	
+		
+		originalCollisions = {}  
+	
+		
+		button.Text = "More Options"  
+	end  
+	
+	button.MouseButton1Click:Connect(function()  
+		if Clip then  
+			noclip()
+		else  
+			clip()
+		end  
+	end)
+end
+coroutine.wrap(UOLMD_fake_script)()
+local function UFPZEVN_fake_script() -- Close.Close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(UFPZEVN_fake_script)()
+local function VILDX_fake_script() -- BreackingPoint2.Dragify 
+	local script = Instance.new('LocalScript', BreackingPoint2)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    dragSpeed = 1.25
+	    dragInput = nil
+	    dragStart = nil
+	    dragPos = nil
+	    function updateInput(input)
+	        Delta = input.Position - dragStart
+	        Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(VILDX_fake_script)()
