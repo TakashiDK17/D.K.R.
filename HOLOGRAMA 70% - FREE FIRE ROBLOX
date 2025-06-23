@@ -1,0 +1,40 @@
+local function createHighlightInParts(parent) -- created by @takashi_dk17 discord
+    -- created by @takashi_dk17 discord
+    local humanoid = parent:FindFirstChildOfClass("Humanoid") -- created by @takashi_dk17 discord
+    if humanoid then
+        -- created by @takashi_dk17 discord
+        for _, part in pairs(parent:GetDescendants()) do -- created by @takashi_dk17 discord
+            if part:IsA("BasePart") then -- created by @takashi_dk17 discord
+                -- created by @takashi_dk17 discord
+                local hasHighlight = false -- created by @takashi_dk17 discord
+                for _, child in pairs(part:GetChildren()) do -- created by @takashi_dk17 discord
+                    if child:IsA("Highlight") then -- created by @takashi_dk17 discord
+                        hasHighlight = true -- created by @takashi_dk17 discord
+                        break -- created by @takashi_dk17 discord
+                    end -- created by @takashi_dk17 discord
+                end -- created by @takashi_dk17 discord
+
+                -- created by @takashi_dk17 discord
+                if not hasHighlight then -- created by @takashi_dk17 discord
+                    local highlight = Instance.new("Highlight") -- created by @takashi_dk17 discord
+                    highlight.Name = "Highlight" -- created by @takashi_dk17 discord
+                    highlight.Adornee = part -- created by @takashi_dk17 discord
+                    highlight.Parent = part -- created by @takashi_dk17 discord
+                end -- created by @takashi_dk17 discord
+            end -- created by @takashi_dk17 discord
+        end -- created by @takashi_dk17 discord
+    end -- created by @takashi_dk17 discord
+end -- created by @takashi_dk17 discord
+
+local function scanForHumanoids() -- created by @takashi_dk17 discord
+    for _, descendant in pairs(game:GetDescendants()) do -- created by @takashi_dk17 discord
+        if descendant:IsA("Model") then -- created by @takashi_dk17 discord
+            createHighlightInParts(descendant) -- created by @takashi_dk17 discord
+        end -- created by @takashi_dk17 discord
+    end -- created by @takashi_dk17 discord
+end -- created by @takashi_dk17 discord
+
+while true do -- created by @takashi_dk17 discord
+    scanForHumanoids() -- created by @takashi_dk17 discord
+    wait(1) -- created by @takashi_dk17 discord
+end -- created by @takashi_dk17 discord
