@@ -1,0 +1,63 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "B-12 Scripts", Text = "Bienvenido!"}) -- Nuked-by-takashi_dk17 
+wait(1) -- Nuked-by-takashi_dk17 
+-- Nuked-by-takashi_dk17  
+local player = game.Players.LocalPlayer  -- Nuked-by-takashi_dk17 
+local character = player.Character or player.CharacterAdded:Wait()  -- Nuked-by-takashi_dk17 
+local gameId = game.PlaceId -- Nuked-by-takashi_dk17
+local allowedGameId = 123298774354103 -- Nuked-by-takashi_dk17 
+
+local workspace = game:GetService("Workspace")  -- Nuked-by-takashi_dk17 
+
+-- Nuked-by-takashi_dk17
+local ignoreFolder = workspace:FindFirstChild("IGNORE")  -- Nuked-by-takashi_dk17 
+
+if ignoreFolder then  -- Nuked-by-takashi_dk17 
+    -- Nuked-by-takashi_dk17 
+    ignoreFolder:Destroy()  -- Nuked-by-takashi_dk17 
+    print("La carpeta 'IGNORE' ha sido eliminada.")  -- Nuked-by-takashi_dk17 
+else  -- Nuked-by-takashi_dk17 
+    print("La carpeta 'IGNORE' no se encontró en Workspace.")  -- Nuked-by-takashi_dk17 
+end -- Nuked-by-takashi_dk17 
+
+local player = game.Players.LocalPlayer -- Nuked-by-takashi_dk17 
+local playerGui = player:WaitForChild("PlayerGui") -- Nuked-by-takashi_dk17 
+local screenGui = playerGui:WaitForChild("Home") -- Nuked-by-takashi_dk17  
+local hudFrame = screenGui:WaitForChild("HUD") -- Nuked-by-takashi_dk17 
+local staminaFrame = hudFrame:WaitForChild("StaminaFrame") -- Nuked-by-takashi_dk17  
+
+-- Nuked-by-takashi_dk17
+staminaFrame.Name = "Nuked-by-takashi_dk17" -- Nuked-by-takashi_dk17 
+
+-- Nuked-by-takashi_dk17
+local carContainer = workspace:WaitForChild("CarContainer")  -- Nuked-by-takashi_dk17 
+
+-- Nuked-by-takashi_dk17
+local function updateVehicleSeats()  -- Nuked-by-takashi_dk17 
+    -- Nuked-by-takashi_dk17  
+    for _, carModel in ipairs(carContainer:GetChildren()) do  -- Nuked-by-takashi_dk17 
+        -- Nuked-by-takashi_dk17
+        local bodyModel = carModel:FindFirstChild("Body") -- Nuked-by-takashi_dk17  
+        if bodyModel then  -- Nuked-by-takashi_dk17 
+            -- Nuked-by-takashi_dk17  
+            local vehicleSeat = bodyModel:FindFirstChild("VehicleSeat")  -- Nuked-by-takashi_dk17 
+            if vehicleSeat then  -- Nuked-by-takashi_dk17 
+                -- Nuked-by-takashi_dk17 
+                vehicleSeat.MaxSpeed = 150  -- Nuked-by-takashi_dk17 
+                print("MaxSpeed del VehicleSeat actualizado a 150.")  -- Nuked-by-takashi_dk17 
+            end  -- Nuked-by-takashi_dk17 
+        end  -- Nuked-by-takashi_dk17 
+    end  -- Nuked-by-takashi_dk17 
+end  -- Nuked-by-takashi_dk17 
+
+-- Nuked-by-takashi_dk17  
+local function monitorCars()  -- Nuked-by-takashi_dk17 
+    while true do  -- Nuked-by-takashi_dk17 
+        -- Nuked-by-takashi_dk17  
+        updateVehicleSeats()  -- Nuked-by-takashi_dk17 
+        -- Nuked-by-takashi_dk17 
+        wait(5) -- Nuked-by-takashi_dk17 
+    end  -- Nuked-by-takashi_dk17 
+end -- Nuked-by-takashi_dk17 
+
+-- Nuked-by-takashi_dk17  
+monitorCars() -- Nuked-by-takashi_dk17 
